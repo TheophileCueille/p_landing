@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My new profil</title>
+		<meta name="description" content="Bienvenue sur mon profil, récemment passionné par le code, je vous présente ici les quelques techniques HTML et CSS que j'ai aprrise :)" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="source/index.js"></script>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/79fafe60b8.js" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<!-- <h1 class="rev-block"> welcome to my profil -->
+		<!-- <span> Welcome </span> -->
+		<!-- </h1> -->
+		<!-- <h1 class="rev-block" id="titre2">
+		<span> To my new profil </span>
+		</h1> -->
+		<!-- -------TITRE REMPLISSAGE---- -->
+		<div class="cursor"></div>
+		<script>
+			const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+		</script>
+		<div class="fill-effect">
+			<h1 class="fill-effect-stroke"> welcome to my profil </h1>
+			<h1 class="fill-effect-fill"> welcome to my profil </h1>
+		</div>
+		<div class="content">
+			<div class="block b1">
+				<div class="photo2p">
+					<img src="images/CV.png">
+				</div>
+				<div class="text">
+					<p> Dès l’obtention de mon DUT, j’ai souhaité me
+						spécialiser dans le domaine du marketing digital
+						(développement web, SEO, ...)<br>
+						En Programme Grande Ecole à KEDGE, j’ai
+						naturellement orienté mes cours vers le
+						marketing digital<br>
+						Plus tard je souhaite travailler dans ce secteur
+						en tant que chef de projet digital et accompagner
+						les entreprises dans la digitalisation de leurs
+					activités </p>
+				</div>
+				<div class="icone_linkedin">
+					<a href="https://www.linkedin.com/in/th%C3%A9ophile-cueille-2073a3140/"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div class="block b2">
+				<h1 class="titre-compétences">mes compétences</h1>
+				<p class="grostitres2">informatique</p>
+				<p class="petits_B2">Développement Web - HTML CSS Analyse de données - Google Analytics et Data studio Référencement web - Google Ads Bureautique - Microsoft Office</p>
+				<p class="grostitres2v2">Langues</p>
+				<p class="petits_B2v2">Anglais - En cours d’évaluation Toefl. Année de licence en Finlande en langue anglaise. niveau courant (B2) Espagnol - Niveau Scolaire</p>
+				<h1 class="titre-contact">contact</h1>
+				<p class="text-contact">Tél:+337.81.84.16.46<br>E-mail :theophile.cueille@gmail.com 
+				</p>
+
+			</div>
+			<div class="block b3">
+				<h1> theophile cueille</h1>
+				<p> stage marketing digital ( 6 mois à partir de janvier 2020)
+				</p>
+			</div>
+			<div class="block b4">
+			<h1>formation</h1>
+			<ul>
+				<li>2019/2010 - Cursus en cours : Master 1 PGE majeure Marketing Digital Kedge Business School
+				</li>
+				<li>2019 - Licence Management Sciences et Technologies - IAE de Montpellier - DUETI dans le cadre d'un parcours Erasmus en Finlande à TUAS ( Turku University of Applied Sciences)
+				</li>
+				<li>2018 - DUT Spécialité Techniques de commercialisation
+				</li>
+				<li>2016 -Baccalauréat série S option Physique Chimie (A Bien)
+				</li>
+			<h1>Experiences et stages</h1>
+			<p class="grostitres">2018 - Community manager junior chez project rescsue ocean (2 MOIS) </p>
+			<p>ONG environnementale - lutte contre la pollution des cours d’eau - défense et protection de l’environnement :</p>
+			<ul>
+				<li>
+					Génération de leads pour une campagne de crowdfunding via Facebook
+				</li>
+				<li>
+					Création d'une newsletter hebdomadaire (Mailjet)
+				</li>
+			</ul>
+			<p class="grostitres">2017 - commercial junior chez promocash (1 mois)</p>
+			<p class="petitstitres">Vente en BtoB et BtoC – prospection bases clients – phoning – actions terrain</p>
+			<h1> Projets Conduits </h1>
+			<p class="text_bold">2019 - Développeur web junior chez Technom'aide</p>
+			<p>Développement front-end de sites web pour l'association digitale de Kedge Business School.</p>
+			<p class="text_bold">2018/2019 - Global Brand for TUAS</p>
+			<p>Projet dans le cadre d'Erasmus - Production de contenu marketingpour promouvoir mon université - Création d'une <a href="https://www.youtube.com/watch?v=7dqTtQF2dL0&list=PLEosb7mjTz4W66_gT_MtVBiJ4Hml_e7JE&index=2&t=1s">vidéo promotionnelle à destination des étudiants étrangers</a></p>
+			</div>
+
+
+			</ul>
+		</div>
+	</body>
+</html>

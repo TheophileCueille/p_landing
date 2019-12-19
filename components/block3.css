@@ -1,0 +1,33 @@
+.b3{
+	width: 570px;
+	height: 150px;
+	background-color: #E7ECFF;
+	left:380px;
+	top:0px;
+	position: absolute;
+	line-height: 150px;
+}
+
+
+.b3 h1 {
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 50px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: -20px;
+	left: 80px;
+
+}
+
+.b3 p {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	position: absolute;
+	bottom: -50px;
+	left: 58px;
+	color: black;
+	text-transform: uppercase;
+}

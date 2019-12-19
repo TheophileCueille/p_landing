@@ -1,0 +1,56 @@
+.b1{
+	width: 380px;
+	height: 425px;
+	background-color: #F1F1ED;
+	left:0;
+	top:0;
+	position: absolute;
+	border-radius: 4px 0 0 0;
+	/*display: flex;
+	justify-content: space-between ;*/
+	/*background-image: url(images_components/CV.png);
+	background-repeat: no-repeat;
+	background-position: left 10% bottom 95%;
+	background-size: 150px;*/
+} 
+
+.b1 i {
+	color: #bcbcbc;
+	font-size: 50px;
+	position: absolute;
+	left: 320px;
+	bottom:370px;
+}
+.b1 img {
+	position: absolute;
+	width: 100px;
+	left : 10px;
+	bottom: 295px;
+	border-radius: 4px;
+}
+
+.b1 p {
+	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	bottom: 10px;
+	left: 5px;
+	font-size: 17px;
+	color: black;
+	text-align: justify;
+    text-justify: inter-word;
+    padding-right: 40px;
+    padding-left: 40px;
+	/*box-shadow: none;*/
+}
+
+/*.text{
+	flex-grow: 3;
+} 
+
+.photo2p{
+	font-size: 10%;
+}
+
+.icone_likedin{
+	color: black;
+}*/

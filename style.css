@@ -1,0 +1,13 @@
+@import url(components/title.css);
+@import url(components/mainblock.css);
+@import url(components/background.css);
+@import url(components/block1.css);
+@import url(components/block2.css);
+@import url(components/block3.css);
+@import url(components/block4.css);
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+

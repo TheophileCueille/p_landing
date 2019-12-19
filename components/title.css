@@ -1,0 +1,111 @@
+
+.fill-effect h1 {
+	font-family: 'Archivo Black', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 60px;
+	text-transform: uppercase;
+	/*padding: 0,4em 1em;*/
+	top:5px;
+	left:260px;
+	/*transform: (-50%, -50%);*/
+}
+
+/*.rev-block{
+	-webkit-text-stroke-width:1px;
+	-webkit-text-stroke-color: white;
+	color: rgba(255, 255, 255, 0);
+	transition: opacity 400ms ease, color 1400ms;
+	transition-delay: 0s, 200ms;
+	transition-property: opacity, color;
+	opacity: 0,95;
+}
+
+.rev-block:hover {
+	color: rgba(255, 255, 255, 1);
+}*/
+
+.fill-effect {
+  position: relative;
+}
+.fill-effect:hover .fill-effect-fill {
+  clip-path: inset(0 0 0 0);
+}
+.fill-effect .fill-effect-stroke {
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #bcbcbc;
+  z-index: 10;
+}
+.fill-effect .fill-effect-fill {
+  position: absolute;
+  color: #bcbcbc;
+  z-index: 1;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1600ms ease;
+}
+
+
+/*.rev-block{
+	position: absolute;
+}
+.rev-block span {
+	opacity: 0;
+	animation: appear-text 0.0001s linear forwards;
+	animation-delay: 1.4s;
+}
+
+.rev-block:after {
+	content: '';
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #8701b0;
+	animation: rev-block 1.5s cubic-bezier(0.19, 1.16, 0.22, 1.16) forwards;
+    animation-delay: 1s;
+}
+
+@keyframes rev-block {
+
+	0% {
+		left: 0;
+		width: 0%;
+	}
+	50% {
+		left: 0%;
+		width: 100%
+	}
+	100% {
+		left:100%;
+		width: 0%;
+
+	}
+}
+
+@keyframes appear-text {
+
+	0% {
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}*/
+
+#titre2 { 
+	top: 27%;
+	left: 8%;
+ }
+
+/*#titre2 span {
+	animation-delay: 2s;
+}
+
+#titre2.rev-block:after {
+	background: #f0fe16;
+	animation-delay: 1.4s;
+}*/
