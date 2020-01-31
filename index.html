@@ -36,13 +36,43 @@
         })
 		</script>
 		<div class="fill-effect">
-			<h1 class="fill-effect-stroke"> welcome to my profil </h1>
-			<h1 class="fill-effect-fill"> welcome to my profil </h1>
+			<h1 class="fill-effect-stroke"> welcome to my profile </h1>
+			<h1 class="fill-effect-fill"> welcome to my profile </h1>
 		</div>
 		<div class="content">
 			<div class="block b1">
-				<div class="photo2p">
-					<img src="images/CV.png">
+				<div class="photo2p">				
+						<!-- J'ai rajouté une id "photo" à ton élément <img>  : -->
+					<img id="photo" src="images/CV.png">
+					<!-- ... puis j'ai inséré du JavaScript dans la balise <script> ci-dessous:
+						première ligne, je déclare une constante "photo", qui fait référence à l'élément avec l'id "photo" (ici ton image)
+						seconde ligne, je cible cette constante et je lui ajoute un addEventListener (comme ce que tu as + haut)
+
+						"addEventListener" est une méthode/fonction que ton navigateur est capable de reconnaître.
+						En JavaScript on reconnaît une fonction par les parenthèses qui la suivent. On peut mettre des paramètres dans ces parenthèses, ou pas.
+						
+						Tu peux faire le test avec la fonction "alert()" plus bas: supprime "hello Théo" (pour ne garder que "alert()") et la fonction marchera toujours.
+						Par contre si tu enlèves les parenthèses : "alert", le navigateur n'est plus capable d'interpréter ça comme une fonction
+						
+						La documentation (https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) 
+						nous apprend que la méthode "addEventListener" accepte deux paramètres: le type d'évènement qu'elle doit écouter, & la fonction qui devra 
+						s'exécuter lorsque cet évènement se produit.
+
+						Plus haut, tes méthodes addEventListener écoutent respectivement 'mousemove' (tout mouvement de la souris), et un 'click'.
+						Ici j'ai choisi "click" par simplicité mais il en existe plein d'autres (fournies dans la documentation)
+
+						Donc concrètement, lorsque je clique sur l'élément sélectionné (ta photo), l'évènement déclenche la fonction en second paramètre.
+						Ici il s'agit d'alert(), qui génère une pop-up avec le texte que tu veux.
+						Tu peux essayer de remplacer alert() par console.log("hello théo") par exemple, une autre fonction.
+						Tu verras qu'au clic sur ta photo, elle s'exécutera aussi (tu retrouves ton message dans ta console)
+
+						Bien sûr tu peux aussi appeler d'autres fonctions que tu as définies toi-même... mais ça sera pour une prochaine fois :p
+					-->
+					<script>
+						const photo = document.getElementById("photo")
+						photo.addEventListener('click', () => alert("Hello Théo"))
+					</script>
+
 				</div>
 				<div class="text">
 					<p> Dès l’obtention de mon DUT, j’ai souhaité me
@@ -88,7 +118,7 @@
 				<li>2016 -Baccalauréat série S option Physique Chimie (A Bien)
 				</li>
 			<h1>Experiences et stages</h1>
-			<p class="grostitres">2018 - Community manager junior chez project rescsue ocean (2 MOIS) </p>
+			<p class="grostitres">2018 - Community manager junior chez project rescue ocean (2 MOIS) </p>
 			<p>ONG environnementale - lutte contre la pollution des cours d’eau - défense et protection de l’environnement :</p>
 			<ul>
 				<li>
